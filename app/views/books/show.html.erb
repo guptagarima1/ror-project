@@ -1,0 +1,14 @@
+<p>
+   <%= form.label :title %><br>
+   <%= form.text_field :title %>
+</p>
+<p>
+   <%= form.label :published_at %><br>
+   <%= form.date_field :published_at %>
+</p>
+<p>
+   <%= form.label :language %><br>
+   <%= form.text_field :language %>
+</p>
+<h2>books</h2>
+<%= render @author.all %>

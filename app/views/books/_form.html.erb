@@ -1,0 +1,17 @@
+<%= form_with(model: [ @author, @author.books.build ], local: true) do |form| %>
+    <p>
+       <%= form.label :title %><br>
+       <%= form.text_field :title %>
+    </p>
+    <p>
+       <%= form.label :published_at %><br>
+       <%= form.date_field :published_at %>
+    </p>
+    <p>
+       <%= form.label :language %><br>
+       <%= form.text_field :language %>
+    </p>
+    <p>
+       <%= form.submit %>
+    </p>
+<% end %>

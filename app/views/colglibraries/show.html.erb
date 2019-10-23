@@ -1,0 +1,26 @@
+<p>
+  <strong>Name:</strong>
+  <%= @colglibrary.name %>
+</p>
+ 
+<p>
+  <strong>opening_time:</strong>
+  <%= @colglibrary.opening_time %>
+</p>
+
+<p>
+  <strong>closing_time:</strong>
+  <%= @colglibrary.closing_time %>
+</p>
+
+<h2>Add A Book</h2>
+
+
+<%= render 'books/book' %>
+
+
+
+<%= link_to 'Back', colglibraries_path %>
+<%= link_to 'Edit', edit_colglibrary_path(@colglibrary) %> 
+
+
